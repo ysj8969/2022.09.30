@@ -1,0 +1,437 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset ="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>핑크풋</title>
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/common.css" rel="stylesheet">
+  <link href="css/reset.css" rel="stylesheet">
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+
+
+
+
+
+</head>
+
+<script> 
+
+  function slide(){
+
+   $('.slide').stop().animate({marginLeft:-1900}, function(){
+
+    $('.slide li:first').appendTo('.slide');
+
+    $('.slide').css({marginLeft:0});
+
+  });
+
+ }
+
+
+
+ setInterval(slide, 3000);
+
+
+
+
+
+</script>
+<script>
+  
+  $(function(){
+
+           $('.menu > li').mouseover(function(){
+
+            $(this).children('.sub').stop().slideDown();
+
+           }).mouseout(function(){
+
+            $('.sub').stop().slideUp();
+
+           });
+
+        });
+
+
+</script>
+
+<body>
+  <header>
+    <div id="top">
+      <div id="ttop">
+        <div id="login">
+          <ul>
+            <li><a href="#">로그인</a></li>
+            <li>|</li>
+            <li><a href="#">회원가입</a></li>
+            <li>|</li>
+            <li><a href="#">마이페이지</a></li>
+            <li>|</li>
+            <li><a href="#">장바구니</a></li>
+            <li>0</li>
+
+          </ul>
+        </div>
+        <div id="home">
+          <ul>
+            <li><a href="#">즐겨찾기</a></li>
+            <li>|</li>
+            <li><a href="#">고객센터</a></li>
+            <li>|</li>
+            <li><a href="#">상품후기</a></li>
+            <li>|</li>
+            <li><a href="#">문의하기</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="logobox">
+
+      <div id="logo">
+        <a href="#"><img src="img/logo2.jpg" alt="로고2"></a>
+      </div>
+
+      <div class="search-container">
+        <input name="search" placeholder="검색" name="search" />
+
+      </div>
+    </div>
+
+
+    <div id="navbar">
+      
+        <nav>
+          
+
+          <ul class="menu">
+
+
+            <li><a href="#">신상품</a></li>
+
+            <li><a href="#">베스트</a></li>
+
+            <li><a href="#">문구</a>
+            <ul class="sub">
+              <li>캘린더</li>
+              <li>다이어리/플래너/스케줄러</li>
+              <li>노트/메모</li>
+              <li>편지지/봉투/카드</li>
+              <li>화일</li>
+              <li>필기구/필통/파우치</li> 
+              <li>데코레이션/선물포장</li>
+              <li>앨범/스크랩북</li>
+              <li>데스크정리</li>
+              <li>DIY북</li>
+              <li>캘리용품</li>
+              <li>컬러드로잉</li>
+              <li>문구세트</li>
+              <li>기타문구용품</li>
+            </ul>
+            </li>
+
+            <li><a href="#">페브릭</a>
+            <ul class="sub">
+              <li>쿠션</li>
+              <li>방석</li>
+              <li>슬리퍼</li>
+              <li>담요</li>
+              <li>수면안대</li> 
+              <li>페브릭소품</li>
+              <li>패션의류</li>
+            </ul>
+            </li>
+            <li><a href="#">패션잡화</a>
+            <ul class="sub">
+              <li>가방</li>
+              <li>슈즈/슬리퍼</li>
+              <li>지갑/파우치</li>
+              <li>카드지갑</li>
+              <li>우산</li> 
+              <li>모자/장갑/목도리</li>
+              <li>패션양말</li>
+              <li>옷</li>
+              <li>기타</li>
+            </ul>
+            </li>
+            <li><a href="#">여행</a>
+             <ul class="sub">
+              <li>여행수납</li>
+              <li>여행소품</li>
+              <li>피크닉용품</li>
+            </ul>
+            </li>
+            <li><a href="#">인테리어</a>
+             <ul class="sub">
+              <li>시계</li>
+              <li>플라워/디퓨저</li>
+              <li>액자</li>
+              <li>인테리어기타</li>
+            </ul>
+            </li>
+            <li><a href="#">가전/생활</a>
+             <ul class="sub">
+              <li>여름시즌용품</li>
+              <li>겨울시즌용품</li>
+              <li>청소용품/휴지통</li>
+              <li>텀블러/머그</li>
+              <li>자동차용품</li> 
+              <li>기타</li>
+            </ul>
+            </li>
+            <li><a href="#">핸드폰/디지털</a>
+             <ul class="sub">
+              <li>핸드폰케이스</li>
+              <li>핸드폰 악세서리</li>
+              <li>USB미니가전</li>
+              <li>USB메모리</li>
+              <li>노트북파우치</li> 
+            </ul>
+            </li>
+
+          </ul>
+
+        </nav>
+      
+
+
+
+    </div>
+
+  </header>
+  <!-----------------------슬라이더 퍼온거 시작--------------------------------------->
+  <div id="slidewrap">
+
+
+
+    <ul class="slide">
+
+
+
+      <li><img src="img/slider2.png" alt="slide image"></li>
+
+
+
+      <li><img src="img/benner1-1.jpg" alt="slide image"></li>
+
+
+
+      <li><img src="img/benner1-2.jpg"  alt="slide image"></li>
+
+
+    </ul>
+
+
+
+
+
+  </div>
+
+  <!-----------------------슬라이더 퍼온거 끝--------------------------------------->
+
+
+
+
+<!---
+    <div id="slider">
+
+      <img src="img/slider2.png" alt="슬라이더">
+    </div>
+    --->
+
+    <section id="product">
+      <div id="new">
+
+        <h1>NEW IPEM</h1>
+        <p>핑크풋 따끈따끈한 신상품</p>
+
+        <div class="box">
+          <a href="#"><img src="img/sangpum1.jpg" alt="상품1"></a>
+          <h5>꼬망알림장</h5>
+          <del>1,500원</del>
+          <h3>1,200원</h3>
+
+        </div>
+        <div class="box">
+          <a href="#"><img src="img/sangpum2.jpg" alt="상품2"></a>
+          <h5>더캠버스합지수첩</h5>
+          <del>1,500원</del>
+          <h3>1,200원</h3>
+        </div>
+        <div class="box">
+          <a href="#"><img src="img/sangpum3.jpg" alt="상품3"></a>
+          <h5>쪼꼬미 폼폼블럭</h5>
+          <del>7,000원</del>
+          <h3>5,600원</h3>
+        </div>
+        <div class="box">
+          <a href="#"><img src="img/sangpum4.jpg" alt="상품4"></a>
+          <h5>댄싱베어3줄영어노트</h5>
+          <del>2,000원</del>
+          <h3>1,600원</h3>
+        </div>
+        <div class="box">
+          <a href="#"><img src="img/sangpum5.jpg" alt="상품5"></a>
+          <h5>투게더대학노트</h5>
+          <del>4,000원</del>
+          <h3>3,200원</h3>
+        </div>
+        <div class="box">
+          <a href="#"><img src="img/sangpum6.jpg" alt="상품6"></a>
+          <h5>감사봉투(4set)</h5>
+          <del>2,000원</del>
+          <h3>1,600원</h3>
+        </div>
+        <div class="box">
+          <a href="#"><img src="img/sangpum7.jpg" alt="상품7"></a>
+          <h5>냥냥이미니커터칼</h5>
+          <del>1,500원</del>
+          <h3>1,200원</h3>
+        </div>
+        <div class="box">
+          <a href="#"><img src="img/sangpum8.jpg" alt="상품8"></a>
+          <h5>그루비대학노트</h5>
+          <del>4,000원</del>
+          <h3>3,200원</h3>
+        </div>
+      </div>
+
+
+      <div id="benner">
+        <a href="#"><img src="img/benner1.png"alt="베너1"></a>
+      </div>
+
+      <div id="product2">
+        <div id="weektem">
+          <h1>WEEKLY ITEM</h1>
+          <p>핑크풋 최고의 한주간 베스트 아이템!!</p>
+
+          <div class="box2">
+            <a href="#"><img src="img/item1.jpg" alt="아이템1"></a>
+            <h4>1000포근한편지지</h4>
+            <del>1000원</del>
+            <h3>800원</h3>
+          </div>
+          <div class="box2">
+            <a href="#"><img src="img/item2.jpg" alt="아이템2"></a>
+            <h4>심플미니칼</h4>
+            <del>1,000원</del>
+            <h3>800원</h3>
+          </div>
+          <div class="box2">
+            <a href="#"><img src="img/item3.jpg" alt="아이템3"></a>
+            <h4>당근친구들체인지형광펜(10p)</h4>
+            <del>7,000원</del>
+            <h3>5,600원</h3>
+          </div>
+          <div class="box2">
+            <a href="#"><img src="img/item4.jpg" alt="아이템4"></a>
+            <h4>귀여운친구들랜덤지우개</h4>
+            <del>500원</del>
+            <h3>400원</h3>
+          </div>
+        </div>
+      </div>
+
+      <div id="product3">
+        <h1>HOT ITEM</h1>
+        <p>이 상품 한번 보실래요?</p><br>
+        <div id="hotitembox">
+
+          <div class="box3">
+            <a href="#"><img src="img/hot1.jpg" alt="핫템1"></a>
+            <h4>멍뭉이가게부</h4>
+            <del>6,000원</del>
+            <h3>4,800원</h3>
+          </div>
+
+          <div class="box3">
+            <a href="#"><img src="img/hot2.jpg" alt="핫템2"></a>
+            <h4>당근지워지는 펜</h4>
+            <del>1,000원</del>
+            <h3>800원</h3>
+          </div>
+
+          <div class="box3">
+            <a href="#"><img src="img/hot3.jpg" alt="핫템3"></a>
+            <h4>냥냥이젤떡메모지</h4>
+            <del>3,000원</del>
+            <h3>2,400원</h3>
+          </div>
+
+          <div class="box3">
+            <a href="#"><img src="img/hot4.jpg" alt="핫템4"></a>
+            <h4>디어유용돈봉투카드세트</h4>
+            <del>1,000원</del>
+            <h3>800원</h3>
+          </div>
+        </div>
+
+      </div>
+      <div id="benner2">
+        <a href="#"><img src="img/benner2.jpg" alt="베너2">
+        </div>
+
+
+
+
+
+
+
+      </section>
+      <footer>
+        <div id="fbox">
+
+          <div id="fotbox">
+
+            <ul>
+              <li><a href="#">회사소개</a></li>
+              <li>|</li>
+              <li><a href="#">이용약관</a></li>
+              <li>|</li>
+              <li><a href="#">개인정보처리방침</a></li>
+              <li>|</li>
+              <li><a href="#">이용안내</a></li>
+              <li>|</li>
+              <li><a href="#">광고/제휴문의</a></li>
+            </ul>		
+
+          </div>		
+
+        </div>
+        <div id="cbox">
+          <div id="center">
+            <h2>고객센터</h2>
+            <h6>평일 10:00~18:00</h6>
+
+            <br>
+            <h2>계좌정보
+            1002-232-411330</h2>
+            <h6>우리은행
+            예금주: 유수진(핑크풋)</h6>
+
+          </div>
+          <div id="account">
+            <h2>핑크풋</h2>
+            <span>서울특별시 마포구 독막로7길 64 풀꽃빌딩 2F대표 유수진개인정보관리자<br>
+              대표번호 :070-8672-9133팩스번호 :02-322-0169메일 :pinkfootstore@naver.com<br>
+              사업자등록번호 :128-27-53608 사업자번호조회 >통신판매업신고번호 :2018-서울마포-0223호<br>
+              호스팅제공 : 엔에이치엔고도(주)copyright(c) pinkfotr4168.godomall.com all rights reserved.<span>
+              </div>
+
+
+
+
+
+
+
+
+
+            </footer>
+
+          </body>
+
+          </html>
